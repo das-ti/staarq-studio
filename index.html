@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, nofollow">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+		rel="stylesheet">
+	<link rel="icon" href="img/logo-a.png">
+	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>STAARQ | Studio</title>
+</head>
+
+<body>
+	<main>
+		<header>
+			<div>
+				<a href="index.html"><img id="logo" src="img/logo1.png" alt="logo da empresa"></a>
+			</div>
+			<div class="hamburger" id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav id="navbar">
+				<ul id="navbar-links">
+					<li><a href="pages/sobre.html">Sobre</a></li>
+					<li><a href="pages/portfolio.html">Portfólio</a></li>
+					<li><a href="pages/projetos.html">Projetos</a></li>
+					<li><a href="pages/contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="carousel-container">
+			<div class="carousel-slides" id="carouselSlides">
+				<div class="carousel-slide">
+					<img src="img/3-saxum-residence/8-saxum-pool-terrace.jpg" alt="Saxum Residence">
+					<div class="carousel-caption">
+						<h3>Saxum Residence</h3>
+						<p>Subtítulo</p>
+					</div>
+				</div>
+				<div class="carousel-slide">
+					<img src="img/1-paralia-residence/1-paralia-residence.avif" alt="Paralia Residence">
+					<div class="carousel-caption">
+						<h3>Paralia Residence</h3>
+						<p>Subtítulo</p>
+					</div>
+				</div>
+				<div class="carousel-slide">
+					<img src="img/6-taormina-r1/1-taormina-r1-facade.png" alt="Taormina Residence I">
+					<div class="carousel-caption">
+						<h3>Taormina Residence I</h3>
+						<p>Subtítulo</p>
+					</div>
+				</div>
+				<div class="carousel-slide">
+					<img src="img/7-taormina-r2/1-taormina-r2-facade-drone.jpg" alt="Deserto">
+					<div class="carousel-caption">
+						<h3>Taormina Residence II</h3>
+						<p>Subtítulo</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+			<button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+
+			<!-- <img class="carousel-btn prev" onclick="moveSlide(-1)" src="fontawesome/svg/solid/chevron-left.svg" alt="Imagem anterior">
+			<img class="carousel-btn next" onclick="moveSlide(1)" src="fontawesome/svg/solid/chevron-right.svg" alt="Próxima imagem"> -->
+
+			<div class="carousel-indicators" id="indicators"></div>
+		</section>
+	</main>
+	<script src="js/menu.js"></script>
+	<script src="js/carousel.js"></script>
+</body>
+
+</html>
