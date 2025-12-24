@@ -11,11 +11,11 @@ body {
 }
 
 header {
-  padding: 0.3rem 2rem;
+  padding: 0.3rem 2rem 0.3rem 1rem;
   top: 0;
   z-index: 1000;
   width: 100vw;
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +28,6 @@ header > div {
   justify-content: space-between;
   align-items: center;
   max-width: 100vw;
-  margin: 0 auto;
 }
 
 #logo {
@@ -136,6 +135,42 @@ header > div {
   letter-spacing: 2px;
 }
 
+#contatos {
+  position: sticky;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contatos h2{
+  margin: 50px;
+}
+
+#formulario{
+  display: flex;
+  justify-content: center;
+}
+
+#container-texto {
+  width: 30%;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+form input{
+  margin-bottom: 5px;
+}
+
+form button{
+  width: 25%;
+  font-size: 1.2rem;
+}
 /* Responsivo para tablets */
 @media (max-width: 1024px) {
   #portfolio {
