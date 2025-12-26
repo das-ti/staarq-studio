@@ -33,6 +33,7 @@ li a:hover {
   flex-direction: column;
   cursor: pointer;
   padding: 0.1rem;
+  margin: 0;
   z-index: 1001;
 }
 
@@ -40,7 +41,7 @@ li a:hover {
   width: 25px;
   height: 3px;
   background: #1e1e1e;
-  margin: 3px 0;
+  margin: 4px 0;
   transition: all 0.3s;
   border-radius: 3px;
 }

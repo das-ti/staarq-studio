@@ -1,0 +1,137 @@
+#portfolio {
+  max-width: 100vw;
+  /* margin: 0 auto; */
+}
+
+/* Layout da Galeria - Grid com 2 colunas */
+#portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 50px 100px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Faz o h2 ocupar as 2 colunas */
+
+
+.container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #1e1e1e;
+  display: block;
+  transition: transform 0.95s ease;
+}
+
+.container:hover img {
+  transform: scale(1.05);
+}
+
+/* O elemento de overlay (o título) */
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.container:hover .overlay-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+
+.overlay-text p {
+  margin: 0;
+  padding: 20px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+  letter-spacing: 2px;
+}
+
+
+/* Responsivo para tablets */
+@media (max-width: 1024px) {
+  #portfolio {
+    padding: 120px 30px 30px;
+    gap: 30px;
+  }
+
+  #portfolio h2 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-text {
+    font-size: 2rem;
+  }
+}
+
+/* Responsivo para mobile - 1 coluna */
+@media (max-width: 768px) {
+  #portfolio {
+    grid-template-columns: 1fr;
+    padding: 100px 20px 30px;
+    gap: 25px;
+  }
+
+  #portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .overlay-text {
+    font-size: 1.8rem;
+  }
+
+  .overlay-text p {
+    padding: 15px;
+    letter-spacing: 1px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  #portfolio {
+    padding: 90px 15px 20px;
+    gap: 20px;
+  }
+
+  #portfolio h2 {
+    font-size: 1.8rem;
+  }
+
+  .overlay-text {
+    font-size: 1.5rem;
+  }
+}
