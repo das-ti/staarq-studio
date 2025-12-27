@@ -16,10 +16,9 @@
 		href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
 		rel="stylesheet">
 	<link rel="icon" href="../img/logo-new.png">
-	<link rel="stylesheet" href="../css/carousel.css">
-	<link rel="stylesheet" href="../css/portfolio.css">
-	<link rel="stylesheet" href="../css/menu.css">
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/menu.css">
+	<link rel="stylesheet" href="../css/contato.css">
 	<title>STAARQ | Contato</title>
 </head>
 
@@ -27,7 +26,7 @@
 	<main>
 		<header>
 			<div>
-				<a href="/index.html"><img id="logo" src="/img/logo1.png" alt="logo da empresa"></a>
+				<a href="../index.html"><img id="logo" src="../img/logo1.png" alt="logo da empresa"></a>
 			</div>
 			<div class="hamburger" id="hamburger">
 				<span></span>
@@ -36,9 +35,9 @@
 			</div>
 			<nav id="navbar">
 				<ul id="navbar-links">
-					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="#">Sobre</a></li>
 					<li><a href="portfolio.html">Portfólio</a></li>
-					<li><a href="projetos.html">Projetos</a></li>
+					<li><a href="#">Projetos</a></li>
 					<li><a href="contato.html">Contato</a></li>
 				</ul>
 			</nav>
@@ -57,7 +56,7 @@
 						</div>
 					</article>
 				</div>
-				<form action="">
+				<form action="#">
 					<div id="name">
 						<input id="name" type="text" name="first-name" placeholder="Nome" required>
 					</div>
@@ -66,19 +65,27 @@
 						<input id="whatsapp" type="tel" name="whatsapp" placeholder="WhatsApp" required>
 					</div>
 					<div>
-						<input id="subject" type="text" name="subject" placeholder="Assunto" required>
+						<select name="option" id="">
+							<option value="">Assunto</option>
+							<option value="Projetos Arquitetônicos">Projetos Arquitetônicos</option>
+							<option value="Design de Interiores">Design de Interiores</option>
+							<option value="Revitalição">Revitalização</option>
+							<option value="Gestão e Gerenciamnto de Obras"></option>
+							<option value="Regularização de Imóveis">Regularização de Imóveis</option>
+							<option value="outros">outros</option>
+						</select>
 					</div>
 					<div>
-						<textarea id="message" name="message" cols="100" rows="10"
-							placeholder="Digite sua Mensagem" required></textarea>
+						<textarea id="message" name="message" cols="100" rows="10" placeholder="Digite sua Mensagem"
+							required></textarea>
 					</div>
 					<button type="submit">Enviar</button>
 				</form>
 			</div>
 		</section>
 	</main>
-	<script src="/js/menu.js"></script>
-	<script src="/js/carousel.js"></script>
+	<script src="../js/menu.js"></script>
+	<script src="../js/carousel.js"></script>
 </body>
 
 </html>
