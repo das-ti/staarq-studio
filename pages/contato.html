@@ -49,28 +49,29 @@
 					<article id="chamada">
 						<div id="texto">
 							<p>Entre em contato e fale do seu projeto.</p>
-							<p>Ajudaremos a tornar seu sonho realidade!</p>
+							<p>É o momento de tornar seu sonho em realidade.</p>
 						</div>
 						<div>
 							<img src="../img/planta-casa.jpg" alt="">
 						</div>
 					</article>
 				</div>
-				<form action="#">
+				<form action="#" method="post">
 					<div id="name">
 						<input id="name" type="text" name="first-name" placeholder="Nome" required>
 					</div>
 					<div id="contact">
 						<input id="e-mail" type="email" name="e-mail" placeholder="E-mail" required>
-						<input id="whatsapp" type="tel" name="whatsapp" placeholder="WhatsApp" required>
+						<input id="telefone" type="tel" name="whatsapp" placeholder="(00) 00000-0000"
+							pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+							title="Digite um telefone válido: (11) 98765-4321 ou (11) 3456-7890" required>
 					</div>
 					<div>
 						<select name="option" id="">
 							<option value="">Assunto</option>
 							<option value="Projetos Arquitetônicos">Projetos Arquitetônicos</option>
 							<option value="Design de Interiores">Design de Interiores</option>
-							<option value="Revitalição">Revitalização</option>
-							<option value="Gestão e Gerenciamnto de Obras"></option>
+							<option value="Gestão e Gerenciamento de Obras">Gestão e Gerenciamento de Obras</option>
 							<option value="Regularização de Imóveis">Regularização de Imóveis</option>
 							<option value="outros">outros</option>
 						</select>
@@ -85,7 +86,7 @@
 		</section>
 	</main>
 	<script src="../js/menu.js"></script>
-	<script src="../js/carousel.js"></script>
+	<script src="../js/format-tel.js"></script>
 </body>
 
 </html>
