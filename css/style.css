@@ -11,15 +11,15 @@ body {
 }
 
 header {
-  padding: 0.3rem 3rem 0.3rem 3rem;
-  top: 0;
   z-index: 1000;
-  width: 100vw;
   position: sticky;
+  top: 0;
+  width: 100%;
   display: flex;
+  margin: 0 auto;
+  padding: 0.3rem 3rem;
   justify-content: space-between;
   /* align-items: center; */
-  margin: 0 auto;
   background-color: #fff;
 }
 
