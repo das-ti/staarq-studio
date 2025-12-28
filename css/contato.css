@@ -51,6 +51,7 @@ textarea {
 
 form button {
   width: 25%;
+  width: 100%;
   padding: 4px;
   border-radius: 3px;
   font-size: 1.2rem;
@@ -91,10 +92,10 @@ form button:hover {
     width: 100%;
     border-right: none;
   }
-
+  
   #container-chamada #texto {
     margin: 0 0 3%;
-    text-indent: 7%;
+    text-indent: 10%;
   }
 
   #chamada img {
