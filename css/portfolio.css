@@ -86,10 +86,11 @@
   #portfolio {
     padding: 120px 30px 30px;
     gap: 30px;
+    text-align: center;
   }
 
   #portfolio h2 {
-    font-size: 2.5rem;
+    margin: 0;
   }
 
   .overlay-text {
